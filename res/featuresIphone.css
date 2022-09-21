@@ -1,0 +1,165 @@
+.featureIphone {
+  padding-bottom: 40px;
+}
+
+.featureIphone .featureIphone__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1270px) {
+  .featureIphone .featureIphone__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.featureIphone .featureIphone__row {
+  width: 50%;
+}
+
+.featureIphone .featureIphone__row:first-child img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  left: -90px;
+}
+
+@media (max-width: 1270px) {
+  .featureIphone .featureIphone__row:first-child img {
+    left: 0;
+  }
+}
+
+.featureIphone .featureIphone__row:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1270px) {
+  .featureIphone .featureIphone__row {
+    width: 100%;
+  }
+}
+
+.featureIphone .featureIphone__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.featureIphone .featureIphone__col:last-child {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media (max-width: 1270px) {
+  .featureIphone .featureIphone__col {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.featureIphone .featureIphone__container {
+  max-width: 570px;
+}
+
+@media (max-width: 1270px) {
+  .featureIphone .featureIphone__container {
+    max-width: 100%;
+  }
+}
+
+.featureIphone .featureIphone__title {
+  font-family: 'Varela Round';
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: 400;
+  color: #26272d;
+}
+
+@media (max-width: 1270px) {
+  .featureIphone .featureIphone__title {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+.featureIphone .featureIphone__text {
+  font-family: "Lato";
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #8c8f94;
+}
+
+@media (max-width: 1270px) {
+  .featureIphone .featureIphone__text {
+    text-align: center;
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 950px) {
+  .featureIphone .featureIphone__text {
+    max-width: 100%;
+  }
+}
+
+.featureIphone .featureIphone__button {
+  padding: 14px 20px 14px 26px;
+  border-radius: 21px;
+  margin-top: 30px;
+}
+
+.featureIphone .featureIphone__button span {
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.featureIphone .featureIphone__button:first-child {
+  background-color: #267df4;
+}
+
+.featureIphone .featureIphone__button:first-child img {
+  padding-left: 50px;
+  width: 13px;
+  height: 12px;
+}
+
+.featureIphone .featureIphone__button:last-child {
+  margin-left: 20px;
+  border: 1px solid #26272d;
+}
+
+.featureIphone .featureIphone__button a {
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #26272d;
+}
+
+@media (max-width: 1270px) {
+  .featureIphone .featureIphone__button {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=featuresIphone.css.map */

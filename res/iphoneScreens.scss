@@ -1,0 +1,114 @@
+.iphoneScreens{
+    background-color: #f5f5f8;
+    .iphoneScreens__body {
+        padding-top: 140px;
+        display: flex;
+        flex-direction: column;
+    }
+    .iphoneScreens__titleBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .titleBlock__title {
+            font-family: 'Varela Round';
+            font-size: 42px;
+            line-height: 52px;
+            font-weight: 400;
+            color: #26272d;
+            padding-bottom: 40px;
+        }
+        hr{
+            margin-bottom: 30px;
+                 width: 50px;
+                height: 2px;
+                background-color: #267df4;
+                border-radius: 1px;
+        }
+        .titleBlock__subtitle {
+            font-family: 'Lato';
+            font-size: 12px;
+            line-height: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #8c8f94;
+        }
+    }
+   
+    .iphoneScreens__screens {
+        display: flex;
+        justify-content:center;
+        position: relative;
+        width: 100%;       
+        left: 10px;
+        transition: all 0.3s ease;
+
+        @media (max-width:1400px) {
+            width: 100%;
+            height: 50px;
+        }
+
+    }
+    .screens__screen {
+        transition: all 0.3s ease;
+        align-self: center;
+        cursor: pointer;
+        &:not(:first-child,:last-child){
+            margin: 0px 30px 0px 0px;
+        }
+        img{
+            transition: all 0.3s ease;
+        }
+        @media (max-width:1400px){ 
+            display: none;
+        }
+    }
+    .active__screen{ 
+        &_1{
+            display: block;
+            transition: all 0.3s ease;
+            top: -29px;
+            position: relative;
+            left: 734px;
+        }
+        &_2{
+            display: block;
+            transition: all 0.3s ease;
+            top: -29px;
+            position: relative;
+            left: 385px;
+        }
+        &_3{
+            display: block;
+            transition: all 0.3s ease;
+            top: -29px;
+            position: relative;
+            left: -361px;
+        }
+       
+        &_4{
+            display: block;
+            transition: all 0.3s ease;
+            top: -29px;
+            position: relative;
+            left: -711px;
+        }
+    }
+    .active__telephone{
+        display: block;
+        position: relative;
+        top: -430px;
+    }
+   
+    .core {
+        padding-top: 50px;
+        margin: 0px 0px 30px 0px;
+
+        @media (max-width:1400px){ 
+           cursor: pointer;
+           display:inline-block;
+           margin: 0 auto;
+        }
+    }
+}

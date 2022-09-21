@@ -1,0 +1,240 @@
+.plan{
+    background-color: #f4f4f5;
+   
+    .plan__body {
+        padding-top: 160px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 160px;
+        @media (max-width: 1180px){ 
+            padding-top: 100px;
+            flex-direction: column;
+        }
+    }
+    .plan__row {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        &:last-child{
+            flex-direction: row;
+            width: 60%;
+            justify-content: center;
+        }
+        @media(max-width: 1180px){ 
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
+            &:last-child{
+               width: 100%;
+               justify-content: space-around;
+            }
+        }
+      
+    }
+  
+    .plan__title {
+        font-family: 'Varela Round';
+        font-size: 42px;
+        line-height: 52px;
+        font-weight: 400;
+        color: #26272d;
+        margin-bottom: 70px;
+    }
+    .plan__subtitle {
+        font-family: "Lato";
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #26272d;
+        margin-bottom: 22px;
+       
+    }
+    .plan__choose {
+        display: flex;
+        width: 258px;
+        border: 1px solid #7f8285;
+        border-radius: 25px;
+        margin-bottom: 80px;
+        padding: 3px;
+        .choose__button {
+            cursor: pointer;
+            width:50%;
+            padding: 14px 0px;
+            text-align: center;
+            
+            border-radius: 21px;
+            font-family: "Lato";
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 400;
+            color:#7f8285;
+            &:not(.activeButton){
+                &:hover{
+                    color: #26292c;
+                }
+            }
+            transition: all 0.1s ease 0.1s;
+        }
+        .activeButton {
+            color: #26292c;
+            background-color: #ffffff;
+        }
+    }
+   
+    
+    .plan__text {
+        font-family: "Lato";
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #8c8f94;
+        margin-bottom: 50px;
+    }
+    .plan__support {
+        font-family: "Lato";
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #8c8f94;
+        a{
+            text-decoration: underline;
+            color: #267df4;
+        }
+        @media (max-width: 1180px){ 
+            padding-bottom: 30px;
+        }
+    }
+    .plan__card {
+        
+        box-shadow: 10px 28px 50px 0px rgba(92,95,101,0.2);
+        border-radius: 10px;
+        background-color: #ebebed;
+        padding: 42px 56px 50px 56px;
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        align-items: center;
+         &:hover{
+            position: relative;
+            top: -20px;
+            height: 430px;
+            background-color: #fff;
+            padding: 62px 56px 70px 56px;
+       }
+       @media (max-width: 1180px){
+            height: 430px;
+            background-color: #fff;
+            padding: 62px 56px 70px 56px;
+       }
+       
+        @media (max-width: 693px){
+            margin-top: 20px;
+            width: 310px;
+        }
+        
+        @media (max-width: 693px){
+         
+            width: 260px;
+        }
+        
+      
+       transition: all 0.3s ease 0.3s;
+    }
+    .acitveCard{
+        position: relative;
+        top: -20px;
+        height: 430px;
+        background-color: #fff;
+        padding: 62px 56px 70px 56px;
+    }
+    
+    .card__title {
+        font-family: "Lato";
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 300;
+        color: #26272d;
+        margin-bottom: 30px;
+        
+    }
+    .card__cost {
+        border: 1px solid #7f8285;
+        width: 63px;
+        height: 26px;
+        text-align: center;
+  
+        border-radius: 14px;
+        font-family: "Lato";
+        font-size: 11px;
+        line-height: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #26272d;
+        margin-bottom: 60px;
+
+    }
+    .card__subtitle {
+        font-family: "Lato";
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #8c8f94;
+        margin-bottom: 50px;
+
+    }
+    .card__list {
+        list-style-image: url(/images/done.png) ;
+        li{
+            font-family: "Lato";
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #26292c;
+            
+        }
+       
+    }
+    a{
+     
+        .card__button {
+
+            width: 212px;
+            height: 42px;
+            margin-top: 55px;
+            
+            cursor: pointer;
+            font-family: "Lato";
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 400;
+            border: 1px solid #267df4;
+            border-radius: 21px;
+            background-color: transparent;
+            color: #267df4;
+            &:hover{
+                background-color: #267df4;
+                color: #fff;
+            }
+           @media (max-width: 1180px) {
+            background-color: #267df4;
+                color: #fff;
+           }
+            
+           
+            transition: all 0.3s ease 0.3s;
+        }
+        
+    }
+    .activetedButton{
+        background-color: #267df4;
+        color: #fff;
+    }
+    .nonHover{
+        pointer-events:none;
+    }
+}

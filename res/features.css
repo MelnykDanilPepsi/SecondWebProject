@@ -1,0 +1,93 @@
+.feature .feature__body {
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 170px;
+}
+
+@media (max-width: 767px) {
+  .feature .feature__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.feature .feature__body .feture__row {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
+}
+
+@media (max-width: 767px) {
+  .feature .feature__body .feture__row:last-child {
+    padding-top: 50px;
+  }
+}
+
+.feature .feature__body .feture__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .feature .feature__body .feture__col {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.feature .feature__body .feture__col img {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 50px;
+}
+
+.feature .feature__body .feture__col p {
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #8c8f94;
+}
+
+@media (max-width: 767px) {
+  .feature .feature__body .feture__col p {
+    text-align: center;
+  }
+}
+
+.feature .feature__body .feature__subtitle {
+  font-family: 'Lato';
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 300;
+  color: #26272d;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .feature .feature__body .feature__subtitle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1270px) {
+  .feature .feature__body {
+    padding-bottom: 80px;
+  }
+}
+/*# sourceMappingURL=features.css.map */

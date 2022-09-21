@@ -1,0 +1,122 @@
+.container {
+    max-width: 1167px;
+    margin: 0 auto;
+    @media (max-width: 1200px){ max-width: 970px;}
+    @media (max-width: 992px) {  max-width: 750px;}
+    @media (max-width: 767px) { max-width: none;}
+}
+
+a{
+    text-decoration: none;
+}
+
+.content {
+    overflow: hidden;
+  flex: 1 1 auto;
+}
+
+.footer {
+    border-top: 1px solid #a4a4a7;
+    .footer__body {
+        padding-top: 90px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 130px;
+        @media (max-width: 1000px) {
+            padding-bottom: 50px;
+            
+        }
+        @media (max-width: 530px) {
+            padding-top: 50px;
+        }
+    }
+    .footer__row {
+        display: flex;
+        width: 20%;
+
+        &:last-child{
+            width: 40%;
+            justify-content: space-around;
+            @media (max-width: 1000px) {
+                width: 60%;
+            }
+            @media (max-width: 530px) {
+                display: none;
+            }
+        }
+        &:first-child{
+            @media (max-width: 530px) {
+                width: 100%;
+            }
+        }
+
+    }
+    .footer__col{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        &:first-child{
+            @media (max-width: 530px) {
+               align-items: center;
+            }
+        }
+       
+    }
+   
+    .footer__logo {
+        padding-bottom: 35px;
+    }
+    .footer__text {
+        font-family: "Lato";
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #8c8f94;
+        padding-bottom: 35px;
+        @media (max-width: 530px) {
+            font-size: 20px;
+        }
+    }
+    .footer__appstore {
+        padding-bottom: 20px;
+        @media (max-width: 530px) {
+            img{
+                width: 180px;
+            }
+        }
+    }
+    .footer__socials {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        a img{
+            width: 22px;
+            height: 22px
+            
+        }
+        @media (max-width: 530px) {
+            justify-content: space-around;
+            a img{
+                width: 40px;
+                height: 40px
+            }
+        }
+    }
+    .footer__title {
+        font-family: "Lato";
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #26272d;
+    }
+    .footer__col > a {
+        display: block;
+        font-family: "Lato";
+        font-size: 16px;
+        line-height: 36px;
+        font-weight: 400;
+        color: #8c8f94;
+    }
+}

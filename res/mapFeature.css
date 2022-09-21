@@ -1,0 +1,134 @@
+.mapFeature .mapFeature__body {
+  padding-top: 202px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 220px;
+}
+
+@media (max-width: 1270px) {
+  .mapFeature .mapFeature__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+
+.mapFeature .mapFeature__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mapFeature .mapFeature__row:first-child {
+  margin-left: 10%;
+  width: 30%;
+}
+
+@media (max-width: 1270px) {
+  .mapFeature .mapFeature__row:first-child {
+    width: 100%;
+    margin: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.mapFeature .mapFeature__row:last-child {
+  width: 70%;
+  overflow: hidden;
+}
+
+.mapFeature .mapFeature__row:last-child img {
+  overflow: hidden;
+  position: relative;
+  left: 150px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1270px) {
+  .mapFeature .mapFeature__row:last-child img {
+    left: 0;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .mapFeature .mapFeature__row:last-child {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.mapFeature .mapFeature__col {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.mapFeature .mapFeature__title {
+  font-family: 'Varela Round';
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: 400;
+  color: #26272d;
+}
+
+@media (max-width: 1270px) {
+  .mapFeature .mapFeature__title {
+    text-align: center;
+  }
+}
+
+.mapFeature .mapFeature__text {
+  font-family: "Lato";
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #8c8f94;
+}
+
+@media (max-width: 1270px) {
+  .mapFeature .mapFeature__text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 950px) {
+  .mapFeature .mapFeature__text {
+    max-width: 100%;
+  }
+}
+
+.mapFeature .mapFeature__partnersTitle {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #26272d;
+}
+
+.mapFeature .mapFeature__partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mapFeature .partners__col:first-child {
+  padding-right: 30px;
+}
+/*# sourceMappingURL=mapFeature.css.map */

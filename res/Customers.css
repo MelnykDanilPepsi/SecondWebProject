@@ -1,0 +1,107 @@
+.swiper {
+  margin-top: 130px;
+  margin-bottom: 20px;
+}
+
+.swiper .swiper-button-next:after, .swiper .swiper-button-prev:after {
+  color: #26292c;
+  opacity: 0.6;
+}
+
+@media (max-width: 640px) {
+  .swiper .swiper-button-next:after, .swiper .swiper-button-prev:after {
+    display: none;
+  }
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Lato';
+}
+
+.customers__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customers__item .item__avatarBlock {
+  padding-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 578px;
+}
+
+.customers__item .item__avatarBlock .item__avatar img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  -webkit-box-shadow: 14px 38px 40px 0px rgba(92, 95, 101, 0.28);
+          box-shadow: 14px 38px 40px 0px rgba(92, 95, 101, 0.28);
+}
+
+.customers__item .item__avatarBlock .avatarBlock__nextUser {
+  width: 90px;
+  height: 90px;
+  opacity: 0.03;
+  border-radius: 50%;
+  background-color: #26292c;
+}
+
+.customers__item .item__title {
+  font-family: "Lato";
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 300;
+  color: #26272d;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.customers__item .item__text {
+  max-width: 578px;
+  font-family: "Lato";
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #8c8f94;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.customers__item .item__rate {
+  padding-bottom: 40px;
+}
+
+.customers__item .item__name {
+  font-family: "Lato";
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #26272d;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 1000px) {
+  .customers__item .item__name {
+    padding-bottom: 40px;
+  }
+}
+/*# sourceMappingURL=Customers.css.map */

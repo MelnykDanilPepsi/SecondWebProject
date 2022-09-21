@@ -1,0 +1,293 @@
+.plan {
+  background-color: #f4f4f5;
+}
+
+.plan .plan__body {
+  padding-top: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 160px;
+}
+
+@media (max-width: 1180px) {
+  .plan .plan__body {
+    padding-top: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.plan .plan__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+
+.plan .plan__row:last-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1180px) {
+  .plan .plan__row {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .plan .plan__row:last-child {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.plan .plan__title {
+  font-family: 'Varela Round';
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: 400;
+  color: #26272d;
+  margin-bottom: 70px;
+}
+
+.plan .plan__subtitle {
+  font-family: "Lato";
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #26272d;
+  margin-bottom: 22px;
+}
+
+.plan .plan__choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 258px;
+  border: 1px solid #7f8285;
+  border-radius: 25px;
+  margin-bottom: 80px;
+  padding: 3px;
+}
+
+.plan .plan__choose .choose__button {
+  cursor: pointer;
+  width: 50%;
+  padding: 14px 0px;
+  text-align: center;
+  border-radius: 21px;
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #7f8285;
+  -webkit-transition: all 0.1s ease 0.1s;
+  transition: all 0.1s ease 0.1s;
+}
+
+.plan .plan__choose .choose__button:not(.activeButton):hover {
+  color: #26292c;
+}
+
+.plan .plan__choose .activeButton {
+  color: #26292c;
+  background-color: #ffffff;
+}
+
+.plan .plan__text {
+  font-family: "Lato";
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #8c8f94;
+  margin-bottom: 50px;
+}
+
+.plan .plan__support {
+  font-family: "Lato";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #8c8f94;
+}
+
+.plan .plan__support a {
+  text-decoration: underline;
+  color: #267df4;
+}
+
+@media (max-width: 1180px) {
+  .plan .plan__support {
+    padding-bottom: 30px;
+  }
+}
+
+.plan .plan__card {
+  -webkit-box-shadow: 10px 28px 50px 0px rgba(92, 95, 101, 0.2);
+          box-shadow: 10px 28px 50px 0px rgba(92, 95, 101, 0.2);
+  border-radius: 10px;
+  background-color: #ebebed;
+  padding: 42px 56px 50px 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease 0.3s;
+  transition: all 0.3s ease 0.3s;
+}
+
+.plan .plan__card:hover {
+  position: relative;
+  top: -20px;
+  height: 430px;
+  background-color: #fff;
+  padding: 62px 56px 70px 56px;
+}
+
+@media (max-width: 1180px) {
+  .plan .plan__card {
+    height: 430px;
+    background-color: #fff;
+    padding: 62px 56px 70px 56px;
+  }
+}
+
+@media (max-width: 693px) {
+  .plan .plan__card {
+    margin-top: 20px;
+    width: 310px;
+  }
+}
+
+@media (max-width: 693px) {
+  .plan .plan__card {
+    width: 260px;
+  }
+}
+
+.plan .acitveCard {
+  position: relative;
+  top: -20px;
+  height: 430px;
+  background-color: #fff;
+  padding: 62px 56px 70px 56px;
+}
+
+.plan .card__title {
+  font-family: "Lato";
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 300;
+  color: #26272d;
+  margin-bottom: 30px;
+}
+
+.plan .card__cost {
+  border: 1px solid #7f8285;
+  width: 63px;
+  height: 26px;
+  text-align: center;
+  border-radius: 14px;
+  font-family: "Lato";
+  font-size: 11px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #26272d;
+  margin-bottom: 60px;
+}
+
+.plan .card__subtitle {
+  font-family: "Lato";
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #8c8f94;
+  margin-bottom: 50px;
+}
+
+.plan .card__list {
+  list-style-image: url(/images/done.png);
+}
+
+.plan .card__list li {
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #26292c;
+}
+
+.plan a .card__button {
+  width: 212px;
+  height: 42px;
+  margin-top: 55px;
+  cursor: pointer;
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  border: 1px solid #267df4;
+  border-radius: 21px;
+  background-color: transparent;
+  color: #267df4;
+  -webkit-transition: all 0.3s ease 0.3s;
+  transition: all 0.3s ease 0.3s;
+}
+
+.plan a .card__button:hover {
+  background-color: #267df4;
+  color: #fff;
+}
+
+@media (max-width: 1180px) {
+  .plan a .card__button {
+    background-color: #267df4;
+    color: #fff;
+  }
+}
+
+.plan .activetedButton {
+  background-color: #267df4;
+  color: #fff;
+}
+
+.plan .nonHover {
+  pointer-events: none;
+}
+/*# sourceMappingURL=plan.css.map */

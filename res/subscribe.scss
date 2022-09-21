@@ -1,0 +1,61 @@
+.subscribe__body {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 90px 0px;
+}
+.subscribe__title {
+    font-family: 'Varela Round';
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 400;
+    color: #26292c;
+    margin-bottom: 50px;
+    
+}
+.subscribe__form {
+    padding: 3px 5px 3px 26px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #222328;
+    border-radius: 25px;
+    width: 502px;
+    margin-bottom: 30px;
+    input{
+        background-color: transparent;
+        border: none;
+        font-family: "Lato";
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #3a3d4b;
+        width: 69%;
+        &:focus{
+            outline: none;
+        }
+    }
+    button{
+       
+        background-color: #6fc754;
+        border-radius: 21px;
+        border: none;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        width: 164px;
+        height: 42px;
+       
+    }
+    @media (max-width: 600px) {
+        width: 90%;
+    }
+}
+.subscribe__subtitle {
+    font-family: "Lato";
+font-size: 14px;
+line-height: 24px;
+font-weight: 400;
+color: #8c8f94;
+}

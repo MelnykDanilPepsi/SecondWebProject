@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Varela+Round&display=swap');
+@import './res/header.scss';
+@import './res/features.scss';
+@import './res/featuresIphone.scss';
+@import './res/mapFeature.scss';
+@import './res/iphoneScreens.scss';
+@import './res/readyToBuy.scss';
+@import './res/Customers.scss';
+@import './res/plan.scss';
+@import './res/subscribe.scss';
+@import './res/footer.scss';
+body{
+    margin: 0 auto;
+}
+ul{
+    padding: 0;
+    padding-inline-start: none;
+}
+
+

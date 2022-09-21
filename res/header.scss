@@ -1,0 +1,193 @@
+.header {
+    padding-top:61px;
+    background-image:url('../images/banner_background.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: #f4f4f5;
+   
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 993px) {
+        }
+    }
+    &__menu {
+        flex: 0 0 33%;
+        @media (max-width: 993px) {
+            flex-direction: column;
+            background-color: #fff;
+            position: fixed;         /////!
+            top: -120%;
+            left: 0;
+            overflow:auto;
+            width:100%;
+            height:100%;
+            transition: all 0.3s ease 0s;
+            
+        }
+        &.activeted{
+            display:block;
+            top:0;
+            transition: all 0.3s ease 0s;
+
+        }
+    }
+    .header__list {
+        align-items:center;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        li{
+            a{
+                text-transform: capitalize;
+                color: #26272d;
+                font-size: 16px;
+                text-align: center;
+                font-family: 'Lato', sans-serif;
+                @media (max-width:993px) {
+                    font-size: 20px;
+                }
+               
+            }
+            @media (max-width: 993px) {
+                margin-top: 50px;
+            }
+            &.header__button img{
+                @media (max-width: 993px) {
+                    height:23px;
+                    width:20px;
+                }
+            }
+        }
+        @media (max-width: 993px) {
+            flex-direction: column;
+
+        }
+       
+       
+      }
+    &__link {
+    
+    }
+    &__logo {
+        
+        
+    }
+    .active {
+        opacity: 0.4;
+        color: #1b1c1e;
+    }
+    
+    .header__button {
+        padding: 9px 24px 13px 17px;
+        background-color: #267df4;
+        border-radius: 21px;
+        .header_buttonText{
+            margin-left: 14px;
+            margin-bottom: 50px;
+            color: #fff;
+        }
+    }
+
+    .burger__menu{
+        &.activeted{
+            span{
+                transform: scale(0);
+            }
+
+            &:after{
+                transform:rotate(-45deg);
+                bottom: 9px;
+            }
+            &:before{
+                transform:rotate(45deg);
+                top: 9px;
+            }
+        }
+        display:none;
+        @media (max-width: 993px){
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+            z-index: 3;
+            span{
+                position: absolute;
+                background-color: #26272d;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                top: 9px;
+                border-radius: 2px;
+
+                transition: all 0.3s ease 0s;
+            }
+            &:before, &:after{
+                content:'';
+                background-color: #26272d;
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                border-radius: 2px;
+                left: 0;
+                transition: all 0.3s ease 0s;
+
+            }
+            &:before{
+                top:0;
+            }
+            &:after{
+                bottom:0;
+            }
+        
+        }
+    }
+
+    .header__titleBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__title {
+        text-align: center;
+        font-family: 'Varela Round';
+        font-size: 62px;
+        line-height: 72px;
+        font-weight: 400;
+        color: #26272d;
+    }
+    .header__subtitle {
+        font-family: 'Lato';
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #8c8f94;
+        text-align: center;
+    }
+    .header__headerBtn {
+       padding: 15px 42.5px 20px 36.5px;
+        margin: 65px 0px 60px 0px;
+        border: 1px solid #26272d;
+        border-radius: 25px;
+        font-family: 'Lato';
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        a{
+            color: #26272d;
+            margin-left: 17px;
+        }
+    }
+    .header__phone {
+        height: 455px;
+        width: 364px;
+    }
+}
+.none{
+    display: none;
+}
+.lock{
+    overflow: hidden;
+}
+

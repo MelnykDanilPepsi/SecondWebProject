@@ -1,0 +1,104 @@
+.featureIphone {
+    .featureIphone__body {
+        display: flex;
+        @media (max-width: 1270px) {
+            flex-direction: column;
+        }
+    }
+    .featureIphone__row {
+        width: 50%;
+        &:first-child{
+            img{
+                height: 100%;
+                width: 100%;
+                position:relative;
+                left: -90px;
+                @media (max-width: 1270px) {
+                    left: 0;
+                }
+            }
+        }
+        &:last-child{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        @media (max-width: 1270px) {
+           width: 100%;
+        }
+    }
+    .featureIphone__col {
+        display: flex;
+        &:last-child{
+            
+            align-self: flex-start;
+        }
+        @media (max-width: 1270px){ 
+            justify-content: center;
+        }
+        
+    }
+    .featureIphone__container{
+        max-width: 570px;
+        @media (max-width: 1270px){ max-width: 100%;}
+    }
+    .featureIphone__title {
+        font-family: 'Varela Round';
+        font-size: 42px;
+        line-height: 52px;
+        font-weight: 400;
+        color: #26272d;
+        @media (max-width: 1270px){ 
+            text-align: center;
+            margin-top: 40px; 
+        }
+    }
+    .featureIphone__text {
+        font-family: "Lato";
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #8c8f94;
+        @media (max-width: 1270px){ 
+            text-align: center;
+            max-width: 60%;
+        }
+        @media (max-width: 950px){max-width: 100%;}
+    }
+    .featureIphone__button {
+        padding: 14px 20px 14px 26px;
+        border-radius: 21px;
+        margin-top: 30px;
+        span{
+            font-family: "Lato";
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #ffffff;
+        }
+        &:first-child {
+            background-color: #267df4;
+            img{
+                padding-left: 50px;
+                width: 13px;
+                height: 12px;
+            }
+        }
+        &:last-child{
+            margin-left: 20px;
+            border: 1px solid #26272d;
+        }
+        a{
+            font-family: "Lato";
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #26272d;
+        }
+        @media (max-width: 1270px){ 
+           align-items: center;
+        }
+    }
+    padding-bottom: 40px;
+}
