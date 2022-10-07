@@ -8,7 +8,7 @@ const lastActivePhoneClass = 'active__telephone';
 
 window.addEventListener('resize',()=>{
 
-   if(window.screen.width > 1400){
+   if(document.documentElement.clientWidth > 1400){
         if(lastActiveIndex !== -1 ){
             screens[lastActiveIndex].classList.remove(lastActivePhoneClass);
         }
@@ -24,7 +24,8 @@ window.addEventListener('resize',()=>{
    
 });
 window.addEventListener('load', ()=>{
-    if(window.screen.width < 1400){
+    console.log(document.documentElement.clientWidth)
+    if(document.documentElement.clientWidth< 1400){
         coreMoveUp();
     }
 })
@@ -34,7 +35,7 @@ for(let i = 0; i < screens.length; i++) {
 
     screens[i].addEventListener('click',()=>{
 
-        if(window.screen.width < 1400){
+        if(document.documentElement.clientWidth < 1400){
             if(lastActiveIndex === 3){
                 screens[lastActiveIndex].classList.remove(lastActivePhoneClass);
                 lastActiveIndex = -1;
@@ -62,7 +63,7 @@ for(let i = 0; i < screens.length; i++) {
 }
 
 core.addEventListener('click',()=>{
-    if(window.screen.width < 1400){
+    if(document.documentElement.clientWidth < 1400){
         if(lastActiveIndex === undefined || lastActiveIndex === -1){
             lastActiveIndex = 0;
             screens[0].classList.add(lastActivePhoneClass);
